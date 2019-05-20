@@ -1,0 +1,66 @@
+body{
+    padding-top: 50px;
+}
+
+.login_top{
+    padding-top:5px;
+}
+
+.carousel {
+    height: 600px;
+    background-color: #000;
+    margin-bottom: 60px;
+}
+
+.carousel .item {
+    height: 600px;
+    background-color: #000;
+}
+
+.carousel  img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#summary-container .col-md-4{
+    text-align: center;
+}
+
+#summary-container .col-md-4 .img-circle-small{
+    height: 160px;
+    width: 160px;
+}
+
+.img-circle{
+    height: 380px;
+    width: 380px;
+}
+
+.feature-divider{
+    margin: 50px  0;
+}
+
+.tab-pane .feature{
+    padding: 60px  0;
+}
+
+.feature-heading{
+    font-size: 40px;
+    color: #2a6496;
+    margin-top: 80px;
+}
+
+.feature-heading .text-muted{
+    font-size: 28px;
+    color: #999;
+}
+
+
+
+

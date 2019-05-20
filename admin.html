@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千峰® 智能门禁系统</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!-- Favicon and touch icons -->
+    <link href="assets/ico/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 下面是左侧导航栏的代码 */
+        .sidebar {
+            position: fixed;
+            top: 51px;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            display: block;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #ddd;
+            border-right: 1px solid #eee;
+        }
+
+        .page-header{
+            padding-top: 10px;
+        }
+
+        .nav-sidebar {
+            margin-right: -21px;
+            margin-bottom: 20px;
+            margin-left: -20px;
+        }
+
+        .nav-sidebar > li > a {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .nav-sidebar > .active > a,
+        .nav-sidebar > .active > a:hover,
+        .nav-sidebar > .active > a:focus {
+            color: #fff;
+            background-color: #428bca;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .main .page-header {
+            margin-top: 0;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="rfid-register.html">千峰® 智能门禁系统</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="demo-navbar" >
+            <ul class="nav navbar-nav">
+                <li><a href="http://www.mobiletrain.org/">官网首页</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!—自适应布局-->
+<div class="container-fluid">
+    <div class="row">
+        <!—左侧导航栏-->
+
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li  class="active"><a class='expandable' href='admin.html' title='回到主页'>
+                    <h4><span class='glyphicon glyphicon-home collapsed-element'></span>
+                        <span class='expanded-element'><strong>回到主页</strong></span></h4>
+                </a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a class='expandable' href='index.html' title='退出登录'>
+                    <span class='glyphicon glyphicon-log-out collapsed-element'></span>
+                    <span class='expanded-element'>退出登录</span>
+                </a></li>
+                <li><a class='expandable' href='user.html' title='用户管理'>
+                    <span class='glyphicon glyphicon-user collapsed-element'></span>
+                    <span class='expanded-element'>用户管理</span>
+                </a></li>
+                <li><a class='expandable' href='query.html' title='信息查询'>
+                    <span class='glyphicon glyphicon-search collapsed-element'></span>
+                    <span class='expanded-element'>信息查询</span>
+                </a></li>
+                <li><a class='expandable' href='rfid-register.html' title='门禁增加'>
+                    <span class='glyphicon glyphicon-plus-sign collapsed-element'></span>
+                    <span class='expanded-element'>门禁增加</span>
+                </a></li>
+                <li><a class='expandable' href='rfid-remove.html' title='门禁删除'>
+                    <span class='glyphicon glyphicon-remove-sign collapsed-element'></span>
+                    <span class='expanded-element'>门禁删除</span>
+                </a></li>
+            </ul>
+        </div>
+        <!—右侧管理控制台-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">智能门禁系统介绍</h1>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <!―panel面板，里面放置一些控件，下同-->
+                    <div class="panel panel-primary">
+                        <!―panel面板的标题，下同-->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">详情</h3>
+                        </div>
+                        <!―panel面板的内容，下同-->
+                        <div class="panel-body">
+                            <h2>智能门禁系统</h2>
+
+                            <h3>简介</h3>
+                            <p>智能门禁安全管理系统是新型现代化安全管理系统，它集微机自动识别技术和现代安全管理措施为一体，它涉及电子，机械，光学，计算机技术，通讯技术，生物技术等诸多新技术。它是解决重要部门出入口实现安全防范管理的有效措施。适用各种机要部门，如银行、宾馆、机房、军械库、机要室、办公间,智能化小区，工厂等。 　在数字技术网络技术飞速发展的今天门禁技术得到了迅猛的发展。门禁系统早已超越了单纯的门道及钥匙管理，它已经逐渐发展成为一套完整的出入管理系统。它在工作环境安全、人事考勤管理等行政管理工作中发挥着巨大的作用。</p>
+
+                            <img src="assets/img/images/rfid0.jpg" width="190" height="200" alt="just an image" class="img-rounded">
+                            <p>门禁系统又称出入管理控制系统(ACCESS CONTROL SYSTEM) . 是一种管理人员进出的智能化管理系统. 概括就是：管理什么人什么时间可以进出那些门，并提供事后的查询报表等等，常见的门禁系统有 : 密码门禁系统 , 非接触卡门禁系统 , 指纹虹膜掌型生物识别门禁系统等的总称，门禁系统近几年发展很快，被广泛应用于管理控制系统中。</p>
+
+                            <img src="assets/img/images/rfid.jpg" width="200" height="120" alt="just an image" />
+                            <p>在该系统的基础上增加相应的辅助设备可以进行电梯控制、车辆进出控制，物业消防监控、保安巡检管理、餐饮收费管理等，真正实现区域内一卡智能管理。</p>
+
+                            <h3>门禁系统发展</h3>
+                            <p>最近几年随着感应卡技术，生物识别技术的发展，门禁系统得到了飞跃式的发展，进入了成熟期，出现了感应卡式门禁系统，指纹门禁系统，虹膜门禁系统，面部识别门禁系统，乱序键盘门禁系统等各种技术的系统，它们在安全性，方便性，易管理性等方面都各有特长，门禁系统的应用领域也越来越广。</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关于 -->
+            <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                            <h4 class="modal-title" id="modal-label">关于</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> 千锋教育一直秉承“用良心做教育”的理念，中国移动互联网研发人才一体化服务的领导品牌，全力打造移动互联网高端研发人才服务平台。
+                                拥有全国权威的移动互联网教学就业保障团队，毕业学员占据了全国移动互联网培训人才一半以上的份额，
+                                做到了毕业学员业内高薪水，成为学员信赖的IT培训机构。拥有上百所合作高校，上千家移动互联网方向合作企业。</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">好的</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 页脚 -->
+            <div id="footer" class="container">
+                <nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="navbar-inner navbar-content-center">
+                        <p class="text-muted credit text-right" style="padding: 10px;">
+                            Copyright 2011-2019 <a href="http://www.1000phone.com/" rel="nofollow" target="_blank" title="千锋互联">北京千锋互联科技有限公司</a>
+                            京ICP备12003911号-3 京公网安备11010802011455号
+                            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                            document.write(unescape("%3Cspan id='cnzz_stat_icon_1262673999'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1262673999%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                        </p>
+                    </div>
+                </nav>
+            </div>
+
+<!--js-->
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/deal_backup.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

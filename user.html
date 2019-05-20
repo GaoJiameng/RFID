@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千峰® 智能门禁系统</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!-- Favicon and touch icons -->
+    <link href="assets/ico/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 下面是左侧导航栏的代码 */
+        .sidebar {
+            position: fixed;
+            top: 51px;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            display: block;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #ddd;
+            border-right: 1px solid #eee;
+        }
+
+        .page-header{
+            padding-top: 10px;
+        }
+
+        .nav-sidebar {
+            margin-right: -21px;
+            margin-bottom: 20px;
+            margin-left: -20px;
+        }
+
+        .nav-sidebar > li > a {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .nav-sidebar > .active > a,
+        .nav-sidebar > .active > a:hover,
+        .nav-sidebar > .active > a:focus {
+            color: #fff;
+            background-color: #428bca;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .main .page-header {
+            margin-top: 0;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="rfid-register.html">千峰® 智能门禁系统</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="demo-navbar" >
+            <ul class="nav navbar-nav">
+                <li><a href="http://www.mobiletrain.org/">官网首页</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!—自适应布局-->
+<div class="container-fluid">
+    <div class="row">
+        <!—左侧导航栏-->
+
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a class='expandable' href='admin.html' title='回到主页'>
+                    <h4><span class='glyphicon glyphicon-home collapsed-element'></span>
+                        <span class='expanded-element'><strong>回到主页</strong></span></h4>
+                </a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a class='expandable' href='index.html' title='退出登录'>
+                    <span class='glyphicon glyphicon-log-out collapsed-element'></span>
+                    <span class='expanded-element'>退出登录</span>
+                </a></li>
+                <li  class="active"><a class='expandable' href='user.html' title='用户管理'>
+                    <span class='glyphicon glyphicon-user collapsed-element'></span>
+                    <span class='expanded-element'>用户管理</span>
+                </a></li>
+                <li><a class='expandable' href='query.html' title='信息查询'>
+                    <span class='glyphicon glyphicon-search collapsed-element'></span>
+                    <span class='expanded-element'>信息查询</span>
+                </a></li>
+                <li><a class='expandable' href='rfid-register.html' title='门禁增加'>
+                    <span class='glyphicon glyphicon-plus-sign collapsed-element'></span>
+                    <span class='expanded-element'>门禁增加</span>
+                </a></li>
+                <li><a class='expandable' href='rfid-remove.html' title='门禁删除'>
+                    <span class='glyphicon glyphicon-remove-sign collapsed-element'></span>
+                    <span class='expanded-element'>门禁删除</span>
+                </a></li>
+            </ul>
+        </div>
+        <!—右侧管理控制台-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">管理控制台</h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!―panel面板，里面放置一些控件，下同-->
+                    <div class="panel panel-primary">
+                        <!―panel面板的标题，下同-->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">用户管理</h3>
+                        </div>
+                        <!―panel面板的内容，下同-->
+                        <div class="panel-body">
+                           <h1>正在开发中。。。</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关于 -->
+            <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                            <h4 class="modal-title" id="modal-label">关于</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> 千锋教育一直秉承“用良心做教育”的理念，中国移动互联网研发人才一体化服务的领导品牌，全力打造移动互联网高端研发人才服务平台。
+                                拥有全国权威的移动互联网教学就业保障团队，毕业学员占据了全国移动互联网培训人才一半以上的份额，
+                                做到了毕业学员业内高薪水，成为学员信赖的IT培训机构。拥有上百所合作高校，上千家移动互联网方向合作企业。</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">好的</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 页脚 -->
+            <div id="footer" class="container">
+                <nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="navbar-inner navbar-content-center">
+                        <p class="text-muted credit text-right" style="padding: 10px;">
+                            Copyright 2011-2019 <a href="http://www.1000phone.com/" rel="nofollow" target="_blank" title="千锋互联">北京千锋互联科技有限公司</a>
+                            京ICP备12003911号-3 京公网安备11010802011455号
+                            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                            document.write(unescape("%3Cspan id='cnzz_stat_icon_1262673999'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1262673999%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                        </p>
+                    </div>
+                </nav>
+            </div>
+
+<!--js-->
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/deal_backup.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
